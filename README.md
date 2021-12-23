@@ -1,7 +1,7 @@
 <!-- omit in toc -->
 # @ember/test-waiters
 
-[![CI Build](https://github.com/emberjs/ember-test-waiters/workflows/CI%20Build/badge.svg)](https://github.com/emberjs/ember-test-waiters/actions/workflows/ci-build.yml)
+[![CI Build](https://github.com/emberjs/@ember/test-waiters/workflows/CI%20Build/badge.svg)](https://github.com/emberjs/ember-test-waiters/actions/workflows/ci-build.yml)
 [![npm version](https://badge.fury.io/js/%40ember%2Ftest-waiters.svg)](https://badge.fury.io/js/%40ember%2Ftest-waiters)
 [![Monthly Downloads from NPM](https://img.shields.io/npm/dm/%40ember%2Ftest-waiters.svg?style=flat-square)](https://www.npmjs.com/package/%40ember%2Ftest-waiters)
 [![Code Style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](#badge)
@@ -164,7 +164,7 @@ export default class MoreFriendz extends Component {
 // wrapping ember-concurrency tasks
 import Component from '@ember/component';
 import { task } from 'ember-concurrency';
-import { waitFor } from 'ember-test-waiters';
+import { waitFor } from '@ember/test-waiters';
 
 export default Component.extend({
   doTaskStuff: task(waitFor(function* doTaskStuff() {
@@ -177,7 +177,7 @@ export default Component.extend({
 // decorator form with ember-concurrency tasks
 import Component from '@ember/component';
 import { task } from 'ember-concurrency-decorators';
-import { waitFor } from 'ember-test-waiters';
+import { waitFor } from '@ember/test-waiters';
 
 export default class Friendz extends Component {
   @task
